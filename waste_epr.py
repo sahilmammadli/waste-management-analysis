@@ -16,7 +16,7 @@ import seaborn as sns
 import numpy as np
 import fiona
 from adjustText import adjust_text
-import squarify    # pip install squarify (algorithm for treemap)
+import squarify
 import io
 import zipfile
 from collections import defaultdict 
@@ -109,7 +109,7 @@ for country in country_EPR_year:
     myaxes.set_xlabel('Years')
     myaxes.set_ylabel('Tonnes, Thousands')
     myaxes.set_title(country + ': Waste generation vs Recycling')
-    plt.axvline(x=country_EPR_year[country], color='g', linestyle='--')
+    plt.axvline(x=country_EPR_year[country], label = 'EPR adoption(year)', color='g', linestyle='--')
 
     myaxes.legend()
     fig.tight_layout()
