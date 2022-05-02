@@ -66,7 +66,7 @@ oecd_waste_recovery = oecd[oecd.VAR.isin(oecd_data_recovery)]
 # Extended Producer Responsibility (EPR) is a policy approach under which producers are given a significant responsibility – financial and/or physical – for the treatment or disposal of post-consumer products.
 country_EPR_year = {
    "Finland": 1997, "Germany": 1991, 'United Kingdom':1997, 'Israel':2011, "France": 1992,
-   "Japan": 1995,"Australia": 1997, 'Sweden': 1993,
+   "Japan": 1995,"Australia": 1997, 'Sweden': 1993, 'United States': 2019
    }
 for country in country_EPR_year:
     #Muncipal
