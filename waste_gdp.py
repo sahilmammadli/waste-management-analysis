@@ -27,6 +27,7 @@ data = pd.read_csv("country_level_data_0.csv")
 #load GDP from another csv file
 data_gdp = pd.read_csv("API_NY.GDP.MKTP.CD_DS2_en_csv_v2_4019306.csv")
 print(data_gdp.head())
+#data_gdp.info()
 
 # find and assign the gdp of a country from data_gdp based on the name of the country
 for index_gdp, row_gdp in data_gdp.iterrows():
